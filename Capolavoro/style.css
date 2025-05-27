@@ -1,0 +1,208 @@
+nav ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+    background-color:#302f2f;
+}
+nav ul li {
+    display:inline-block;
+    font-size: 20px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 25px;
+    color:#ffffff;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color:#000000;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color:#f2f2f2;
+}
+
+nav ul ul li {
+    display: block;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+nav ul ul li a {
+    padding: 30px;
+    color:#333;
+}
+
+nav ul ul li a:hover {
+    background-color:#ddd;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('rocket-league.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(50%);
+    z-index: -1;
+}
+.titolo {
+    font-family: 'Playfair Display', serif;
+    font-size: 7rem;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    max-width: 5000px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #f0f0f0;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 0 20px;
+    text-align: justify;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    animation: slideFadeIn 2s ease-out forwards;
+    opacity: 0;
+}
+ @keyframes slideFadeIn {
+            0% {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+ul:not(.menu) {
+    max-width: 700px;
+    margin: 20px auto 40px auto;
+    padding: 20px 30px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    list-style-type: disc;
+    color: #f0f0f0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    animation: slideFadeIn 2s ease-out forwards;
+    opacity: 0;
+}
+
+ul li:not(.menu) {
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+ul li strong {
+    color: #ffbb33;
+}
+h1 {
+    max-width: 700px;
+    margin: 40px auto 20px auto;
+    padding: 15px 30px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: #ffbb33;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    scale: 70%;
+    animation: zoomIn 1s forwards;
+}
+@keyframes zoomIn {
+    to {
+        scale: 100%
+    }
+}
+.immagine {
+  display: block;            
+  width: 700px;           
+  height: auto;              
+  margin: 20px auto;         
+  border-radius: 8px;        
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 2s ease-out forwards;
+  margin-bottom: 50px;
+}
+.immagine:hover {
+  transform: scale(1.05);    
+  cursor: pointer; 
+}
+.selezionato {
+    display:inline-block;
+    font-size: 20px;
+    border-bottom: #ffbb33;
+}
+.immagine1 {
+  display: block;            
+  width: 700px;           
+  height: auto;              
+  margin: 0px auto;         
+  border-radius: 8px;        
+  transition: transform 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 2s ease-out forwards;
+}
+.immagine1:hover {
+  transform: scale(1.05);    
+  cursor: pointer; 
+}
+.immagine2 {
+  display: block;            
+  width: 700px;           
+  height: auto;      
+  margin: 20px auto;        
+  margin-top: 50px;         
+  border-radius: 8px;        
+  transition: transform 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 2s ease-out forwards;
+}
+.immagine2:hover {
+  transform: scale(1.05);    
+  cursor: pointer; 
+}
